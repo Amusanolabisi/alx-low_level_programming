@@ -1,7 +1,10 @@
 #include <stdio.h>
+
+
 /**
- * main - A program that prints the size of various of computer types
- * Return 0 (Success)
+ * main - Prints the size of various types based on
+ * the computer it is compiledd and run on..
+ * Return: Always 0.
  */
 
 int main(void)
