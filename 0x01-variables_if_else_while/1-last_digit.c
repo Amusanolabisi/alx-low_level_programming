@@ -4,29 +4,31 @@
 
 /**
  * main - prints a text according number
- * Return: Always (Success)
  *
+ * Return: Always 0
  */
 
 int main(void)
 {
-	int n, lastd;
+	int n;
+	int m;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	lastd = n % 10;
+	m = n % 10;
 
-	if (lastd > 5)
+	if (m > 5)
 	{
-	printf("last digit of %d is %d and is greater than 5\n", n, lastd);
+		printf("last digit of %d is %d and is greater than 5", n, m);
 	}
-	else if (lastd == 0)
+	else if (m == 0)
 	{
-	printf("last digit of %d is %d and is 0\n", n, lastd);
+		printf("last digit of %d is %d and is 0", n, m);
 	}
-	else if (lastd < 6 && lastd != 0)
+	else if (m < 6 && m != 0)
 	{
-	printf("last digit of %d is %d and is less than 6 and not 0\n", n, lastd);
+		printf("last digit of %d is %d and is less than 6 and not zero", n, m);
 	}
+	printf("\n");
 	return (0);
 }
